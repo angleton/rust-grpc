@@ -2,6 +2,7 @@ use tonic::{transport::Server, Request, Response, Status};
 
 use api::echo_service_server::{EchoService, EchoServiceServer};
 use api::{EchoRequest, EchoResponse};
+use std::env;
 
 use ::clap::{Parser};
 
@@ -18,7 +19,10 @@ impl EchoService for Echo {
         println!("Got a request: {:?}", request);
 
         let reply = EchoResponse {
-            message: format!("{}", request.into_inner().message),
+
+            message: format!("{}", env::consts::OS)
+            // message: format!("{}", request.into_inner().message)
+
         };
 
         Ok(Response::new(reply))
