@@ -1,11 +1,9 @@
 # Creating a microservice in Rust using gRPC
 
-## TL;DR Le Code
-
+## TL;DR The Original Code Repo
 %[https://github.com/dirien/rust-grpc] 
 
 ## Introduction
-
 In today's `Rust` 🦀 tutorial, we will be discovering the world of gRPC. For this, we will create a very simple microservice with a single endpoint which will echo back the message we send to it. To test our microservice, we're also going to create a simple `Rust` 🦀 client. We are also going to use some of the features we learned in the previous blog posts from my series on `Rust` 🦀.
 
 If you haven't read the previous blog posts, I recommend you to go ahead and read them before:
