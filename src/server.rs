@@ -29,6 +29,14 @@ impl EchoService for Echo {
     }
 }
 
+#[cfg(test)]
+mod tests {
+    #[test]
+    fn system_should_be_windows(){
+        false;
+    }
+}
+
 #[derive(Parser)]
 #[command(author, version)]
 #[command(about = "echo-server - a simple echo microservice", long_about = None)]

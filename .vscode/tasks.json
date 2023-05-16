@@ -1,0 +1,12 @@
+{
+    "type": "shell",
+	"version": "2.0.0",
+    "label": "cargo test build",
+    "command": "cargo",
+    "args": [
+        "test", "--no-run"
+    ],
+    "problemMatcher": [
+        "$rustc"
+    ]
+}
